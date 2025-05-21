@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -61,8 +61,6 @@
     <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
   
     <link rel="stylesheet" href="../../../../../_static/css/cobra.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
   
 
   
@@ -160,32 +158,34 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../../index.html">Base</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../paths/index.html">Paths</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../io/index.html">Io</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../cobrarrow/index.html">Cobrarrow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ci/index.html">Ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install/index.html">Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../utilities/index.html">Utilities</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../../index.html">Solvers</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../rescale/index.html">Rescale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../varKin/index.html">Varkin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../NLP/index.html">Nlp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../param/index.html">Param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../getSetSolver/index.html">Getsetsolver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../lp_solve/index.html">Lp_solve</a></li>
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html">Cardopt</a><ul class="current">
 <li class="toctree-l5 current"><a class="current reference internal" href="#">Smoothconcave</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sparseLP/index.html">Sparselp</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../../cplex/index.html">Cplex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../NLP/index.html">Nlp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../gams/index.html">Gams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../getSetSolver/index.html">Getsetsolver</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../lp_solve/index.html">Lp_solve</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../param/index.html">Param</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../entropicFBA/index.html">Entropicfba</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../msk/index.html">Msk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mosek/index.html">Mosek</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gurobi/index.html">Gurobi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../init/index.html">Init</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../rescale/index.html">Rescale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../lindo/index.html">Lindo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../cplex/index.html">Cplex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gams/index.html">Gams</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../paths/index.html">Paths</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../install/index.html">Install</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../utilities/index.html">Utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../ci/index.html">Ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../codeConsistency/index.html">Codeconsistency</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../dataIntegration/index.html">Dataintegration</a></li>
@@ -263,13 +263,13 @@ s.t.  Sx=b</p>
 s.t. <span class="math notranslate nohighlight">\(Sx = b\)</span>
 <span class="math notranslate nohighlight">\(lb &lt;= x &lt;= ub\)</span></p>
 <dl class="field-list simple">
-<dt class="field-odd">USAGE</dt>
+<dt class="field-odd">USAGE<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>[result_tab, sol, lprxns, l1rxns, l0rxns]  = findMinimalSetOfRxns</strong> (<em>model</em>)</p>
 </dd>
-<dt class="field-even">INPUT</dt>
+<dt class="field-even">INPUT<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>model</strong> – COBRA model structure</p>
 </dd>
-<dt class="field-odd">OUTPUTS</dt>
+<dt class="field-odd">OUTPUTS<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>resutl_tab</strong> – number of reactions obtained for each condition</p></li>
 <li><p><strong>sol</strong> – <cite>x</cite> - solution vector</p></li>
@@ -340,9 +340,6 @@ s.t. <span class="math notranslate nohighlight">\(Sx = b\)</span>
         };
     </script>
     <script type="text/javascript" src="../../../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../../../../_static/sphinx_highlight.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
