@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../_static/json/manifest.json">
@@ -70,7 +66,7 @@
     <link rel="top" title="The COBRA Toolbox" href="../../index.html"/>
         <link rel="up" title="Functions" href="../index.html"/>
         <link rel="next" title="Paths" href="paths/index.html"/>
-        <link rel="prev" title="Surfnetsubfunctions" href="../analysis/exploration/surfNetSubfunctions/index.html"/> 
+        <link rel="prev" title="Mdfba" href="../analysis/mdFBA/index.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -159,13 +154,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Base</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="paths/index.html">Paths</a></li>
-<li class="toctree-l3"><a class="reference internal" href="io/index.html">Io</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cobrarrow/index.html">Cobrarrow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ci/index.html">Ci</a></li>
 <li class="toctree-l3"><a class="reference internal" href="install/index.html">Install</a></li>
-<li class="toctree-l3"><a class="reference internal" href="utilities/index.html">Utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="solvers/index.html">Solvers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cobrarrow/index.html">Cobrarrow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="io/index.html">Io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci/index.html">Ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solvers/index.html">Solvers</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../dataIntegration/index.html">Dataintegration</a></li>
@@ -222,7 +217,7 @@
 <style>
    h1 {font-size:0px;}
 </style><div class="tutorialSectionBox base">
-   <div class="sectionLogo"><img class="avatar" src="https://king.nuigalway.ie/cobratoolbox/img/icon_base_wb.png" alt="base"></div>
+   <div class="sectionLogo"><img class="avatar" src="/cobratoolbox/stable/_static/img/base.png" alt="base"></div>
    <div class="sectionTitle"><h3>Base</h3></div>
    <div class="row">
       <div class="col-xs-6">
@@ -231,39 +226,39 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="paths/index.html">Paths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/index.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cobrarrow/index.html">Cobrarrow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codeConsistency/index.html">Codeconsistency</a></li>
 <li class="toctree-l1"><a class="reference internal" href="io/index.html">Io</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="io/newt/index.html">Newt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io/KEGG/index.html">Kegg</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io/json/index.html">Json</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io/old/index.html">Old</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io/utilities/index.html">Utilities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="io/definitions/index.html">Definitions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="io/BiGG/index.html">Bigg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/utilities/index.html">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/old/index.html">Old</a></li>
 <li class="toctree-l2"><a class="reference internal" href="io/python/index.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/KEGG/index.html">Kegg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/json/index.html">Json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/newt/index.html">Newt</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cobrarrow/index.html">Cobrarrow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci/index.html">Ci</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/index.html">Install</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utilities/index.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ci/index.html">Ci</a></li>
 <li class="toctree-l1"><a class="reference internal" href="solvers/index.html">Solvers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="solvers/rescale/index.html">Rescale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/varKin/index.html">Varkin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/NLP/index.html">Nlp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/param/index.html">Param</a></li>
 <li class="toctree-l2"><a class="reference internal" href="solvers/getSetSolver/index.html">Getsetsolver</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/lp_solve/index.html">Lp_solve</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/cardOpt/index.html">Cardopt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/entropicFBA/index.html">Entropicfba</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/mosek/index.html">Mosek</a></li>
 <li class="toctree-l2"><a class="reference internal" href="solvers/gurobi/index.html">Gurobi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/init/index.html">Init</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/NLP/index.html">Nlp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/entropicFBA/index.html">Entropicfba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/rescale/index.html">Rescale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="solvers/lindo/index.html">Lindo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="solvers/cplex/index.html">Cplex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/lp_solve/index.html">Lp_solve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/varKin/index.html">Varkin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/param/index.html">Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/mosek/index.html">Mosek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/cardOpt/index.html">Cardopt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="solvers/gams/index.html">Gams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/init/index.html">Init</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solvers/cplex/index.html">Cplex</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="codeConsistency/index.html">Codeconsistency</a></li>
 </ul>
 </div>
          </div>
@@ -284,6 +279,41 @@
 </div>
 
 <br><span class="target" id="module-src.base"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.buildGrRules">
+<span class="sig-name descname"><span class="pre">buildGrRules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">parsedGPR</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/buildGrRules.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.buildGrRules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the output of GPRparser (a cell array where each cell contains
+the parsed representation of a GPR rule) and converts it back into a
+string representation with parentheses around each gene complex.
+It also removes duplicate gene entries within each complex and duplicate
+complexes across the rule.</p>
+<dl class="field-list">
+<dt class="field-odd">USAGE<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>[rulesOut] = buildGrRules</strong> (<em>parsedGPR</em>)</p>
+<dl class="simple">
+<dt>For example, if a parsed rule is given as:</dt><dd><p>{ {‘geneA’, ‘geneB’, ‘geneA’}, {‘geneC’}, {‘geneA’, ‘geneB’} }</p>
+</dd>
+<dt>then the output string will be:</dt><dd><p>‘(geneA and geneB) or (geneC)’</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">INPUT<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>parsedGPR  - Cell array containing parsed GPR rules.</strong></p>
+</dd>
+<dt class="field-odd">OUTPUT<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rulesOut   - Cell array of strings with the reconstructed GPR rules.</strong></p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<dl class="simple">
+<dt>if a parsed rule is given as:</dt><dd><p>{ {‘geneA’, ‘geneB’, ‘geneA’}, {‘geneC’}, {‘geneA’, ‘geneB’} }</p>
+</dd>
+<dt>then the output string will be:</dt><dd><p>{‘(geneA and geneB) or (geneC)’}</p>
+</dd>
+</dl>
+<p>AUTHORS: Farid Zare, April 2025</p>
+</dd></dl>
+
+<dl class="mat function">
 <dt class="sig sig-object mat" id="src.base.calcGroupStats">
 <span class="sig-name descname"><span class="pre">calcGroupStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">groups</span></em>, <em class="sig-param"><span class="pre">statName</span></em>, <em class="sig-param"><span class="pre">groupList</span></em>, <em class="sig-param"><span class="pre">randStat</span></em>, <em class="sig-param"><span class="pre">nRand</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/calcGroupStats.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.calcGroupStats" title="Permalink to this definition">¶</a></dt>
 <dd><p>calcGroupStats Calculate statistics such as mean or standard deviation for
@@ -573,6 +603,42 @@ and transforming model.grRules into model.rules</p>
 </dd></dl>
 
 <dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.removeGeneVersions">
+<span class="sig-name descname"><span class="pre">removeGeneVersions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/removeGeneVersions.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.removeGeneVersions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>removeGeneVersions Removes gene versions from a COBRA model and updates</dt><dd><p>model.genes, model.grRules, model.rules, and model.rxnGeneMat.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>modelOut = removeGeneVersions</strong> (<em>model</em>)</p>
+</dd>
+<dt class="field-even">INPUTS<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>model - COBRA model structure with fields ‘genes’ and ‘grRules’</strong></p>
+</dd>
+<dt class="field-odd">OUTPUTS<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>modelOut - Updated model with gene versions removed.</strong></p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Gene versions are removed:</dt><dd><p>Input GPR:   {(857.1 and 34.1) or 45.1}
+Output GPR:  {(857 and 34) or 45}</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duplicate genes are removed:</dt><dd><p>Input GPR:   {(857.1 and 451.1) or (857.2 and 451.2)}
+Output GPR:  {(857 and 451)}</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>AUTHORS: Farid Zare, April 2025</p>
+</dd></dl>
+
+<dl class="mat function">
 <dt class="sig sig-object mat" id="src.base.reporterMets">
 <span class="sig-name descname"><span class="pre">reporterMets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">nRand</span></em>, <em class="sig-param"><span class="pre">pValFlag</span></em>, <em class="sig-param"><span class="pre">nLayers</span></em>, <em class="sig-param"><span class="pre">metric</span></em>, <em class="sig-param"><span class="pre">dataRxns</span></em>, <em class="sig-param"><span class="pre">inclExchFlag</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/reporterMets.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.reporterMets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implements the reporter metabolites algorithm by Patil &amp; Nielsen</p>
@@ -724,7 +790,7 @@ newList = {‘a’, ‘B’, ‘C’};</p>
         <a href="paths/index.html" class="btn btn-default float-right" title="Paths" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../analysis/exploration/surfNetSubfunctions/index.html" class="btn btn-default" title="Surfnetsubfunctions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../analysis/mdFBA/index.html" class="btn btn-default" title="Mdfba" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

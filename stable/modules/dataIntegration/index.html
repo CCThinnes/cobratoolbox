@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../index.html"/>
         <link rel="up" title="Functions" href="../index.html"/>
-        <link rel="next" title="Metabotools" href="metabotools/index.html"/>
-        <link rel="prev" title="Codeconsistency" href="../base/codeConsistency/index.html"/> 
+        <link rel="next" title="Transcriptomics" href="transcriptomics/index.html"/>
+        <link rel="prev" title="Cplex" href="../base/solvers/cplex/index.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -159,13 +154,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../base/index.html">Base</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Dataintegration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="transcriptomics/index.html">Transcriptomics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fluxomics/index.html">Fluxomics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="XomicsToModel/index.html">Xomicstomodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metaboAnnotator/index.html">Metaboannotator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metanetxMapper/index.html">Metanetxmapper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="chemoInformatics/index.html">Chemoinformatics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="metaboAnnotator/index.html">Metaboannotator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="XomicsToModel/index.html">Xomicstomodel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="transcriptomics/index.html">Transcriptomics</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../design/index.html">Design</a></li>
@@ -221,7 +216,7 @@
 <style>
    h1 {font-size:0px;}
 </style><div class="tutorialSectionBox dataIntegration">
-   <div class="sectionLogo"><img class="avatar" src="https://king.nuigalway.ie/cobratoolbox/img/icon_dataIntegration_wb.png" alt="dataIntegration"></div>
+   <div class="sectionLogo"><img class="avatar" src="/cobratoolbox/stable/_static/img/dataIntegration.png" alt="dataIntegration"></div>
    <div class="sectionTitle"><h3>Dataintegration</h3></div>
    <div class="row">
       <div class="col-xs-6">
@@ -229,48 +224,48 @@
 <h1>Dataintegration<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcriptomics/index.html">Transcriptomics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/FASTCORE/index.html">Fastcore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/MOOMIN/index.html">Moomin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/eFlux/index.html">Eflux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/preprocessing/index.html">Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/INIT/index.html">Init</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/iMAT/index.html">Imat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/SWIFTCORE/index.html">Swiftcore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/GIMME/index.html">Gimme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcriptomics/MBA/index.html">Mba</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="fluxomics/index.html">Fluxomics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fluxomics/atomTransition/index.html">Atomtransition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fluxomics/c13solver/index.html">C13solver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fluxomics/atomTransition/index.html">Atomtransition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="XomicsToModel/index.html">Xomicstomodel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/proteomics/index.html">Proteomics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/metabolomics/index.html">Metabolomics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/analysis/index.html">Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/prepareData/index.html">Preparedata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/thermoKernel/index.html">Thermokernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/oneRxnPerActiveGene/index.html">Onerxnperactivegene</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metaboAnnotator/index.html">Metaboannotator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/generateMetInfo/index.html">Generatemetinfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/buildMetStruct/index.html">Buildmetstruct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/analyseMetStruct/index.html">Analysemetstruct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/molFileFinder/index.html">Molfilefinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/connect2resources/index.html">Connect2resources</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="metanetxMapper/index.html">Metanetxmapper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chemoInformatics/index.html">Chemoinformatics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="chemoInformatics/molecularWeight/index.html">Molecularweight</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chemoInformatics/metabolites/index.html">Metabolites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemoInformatics/reactions/index.html">Reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chemoInformatics/inchi/index.html">Inchi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chemoInformatics/RXN/index.html">Rxn</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chemoInformatics/reactions/index.html">Reactions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="metaboAnnotator/index.html">Metaboannotator</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/connect2resources/index.html">Connect2resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/molFileFinder/index.html">Molfilefinder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/analyseMetStruct/index.html">Analysemetstruct</a></li>
-<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/generateMetInfo/index.html">Generatemetinfo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="metaboAnnotator/buildMetStruct/index.html">Buildmetstruct</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="XomicsToModel/index.html">Xomicstomodel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/prepareData/index.html">Preparedata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/proteomics/index.html">Proteomics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/oneRxnPerActiveGene/index.html">Onerxnperactivegene</a></li>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/metabolomics/index.html">Metabolomics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/thermoKernel/index.html">Thermokernel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="XomicsToModel/analysis/index.html">Analysis</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="transcriptomics/index.html">Transcriptomics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/INIT/index.html">Init</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/MOOMIN/index.html">Moomin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/GIMME/index.html">Gimme</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/preprocessing/index.html">Preprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/MBA/index.html">Mba</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/FASTCORE/index.html">Fastcore</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/iMAT/index.html">Imat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/eFlux/index.html">Eflux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transcriptomics/SWIFTCORE/index.html">Swiftcore</a></li>
 </ul>
 </li>
 </ul>
@@ -557,10 +552,10 @@ objective function tested.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="metabotools/index.html" class="btn btn-default float-right" title="Metabotools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="transcriptomics/index.html" class="btn btn-default float-right" title="Transcriptomics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../base/codeConsistency/index.html" class="btn btn-default" title="Codeconsistency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../base/solvers/cplex/index.html" class="btn btn-default" title="Cplex" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

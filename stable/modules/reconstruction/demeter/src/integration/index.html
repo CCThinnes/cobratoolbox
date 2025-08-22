@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../../../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../../../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../../../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../../../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../../index.html"/>
         <link rel="up" title="Src" href="../index.html"/>
-        <link rel="next" title="Suite" href="../../suite/index.html"/>
-        <link rel="prev" title="Debugging" href="../debugging/index.html"/> 
+        <link rel="next" title="Debugging" href="../debugging/index.html"/>
+        <link rel="prev" title="Refinement" href="../refinement/index.html"/> 
 
   
   <script src="../../../../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../../../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../../../../_static/../" + item.website_url + "' ><img src='../../../../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../../../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../../../../_static/../" + item.website_url + "' ><img src='../../../../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -161,24 +156,24 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../design/index.html">Design</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../../index.html">Reconstruction</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../../modelGeneration/index.html">Modelgeneration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rBioNet/index.html">Rbionet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../refinement/index.html">Refinement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../growthExpMatch/index.html">Growthexpmatch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../comparison/index.html">Comparison</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../fastGapFill/index.html">Fastgapfill</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../metaboRePort/index.html">Metaboreport</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../../index.html">Demeter</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../suite/index.html">Suite</a></li>
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html">Src</a><ul class="current">
 <li class="toctree-l5"><a class="reference internal" href="../properties/index.html">Properties</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../refinement/index.html">Refinement</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../debugging/index.html">Debugging</a></li>
 <li class="toctree-l5 current"><a class="current reference internal" href="#">Integration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../debugging/index.html">Debugging</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../../suite/index.html">Suite</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../metaboRePort/index.html">Metaboreport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../refinement/index.html">Refinement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../comparison/index.html">Comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../fastGapFill/index.html">Fastgapfill</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../modelGeneration/index.html">Modelgeneration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../visualization/index.html">Visualization</a></li>
@@ -270,6 +265,34 @@ removedStrains:       Strains that were in inputData but are not present</p>
 </div></blockquote>
 <p>duplicateStrains:     Strains that were in inputData more than once</p>
 <p>AUTHOR: Almut Heinken, 06/2020</p>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.reconstruction.demeter.src.integration.createInfoFileDEMETER">
+<span class="sig-name descname"><span class="pre">createInfoFileDEMETER</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">taxIDs</span></em>, <em class="sig-param"><span class="pre">strainNames</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/reconstruction/demeter/src/integration/createInfoFileDEMETER.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.reconstruction.demeter.src.integration.createInfoFileDEMETER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a taxonomy table that can be used as input for DEMETER from a
+list of NCBI Taxonomy IDs. The taxonomy IDs can be on any taxonomical
+level but should be on the strain level to generate a unique model ID.
+If this is not the case, a list of unique and custom gene names each
+corresponding to each taxonomy ID can be provided to serve as strain
+identifiers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>createInfoFileDEMETER</strong> (<em>taxIDs</em>)</p>
+</dd>
+</dl>
+<p>REQUIRED INPUT
+taxIDs         Vector or cell array of numerics that represent valid NCBI</p>
+<blockquote>
+<div><p>Taxonomy IDs.</p>
+</div></blockquote>
+<p>OPTIONAL INPUT
+% strainNames  List of custom gene names to be used a model IDs</p>
+<p>OUTPUT
+infoFile       Table with taxonomic information, gram staining, and</p>
+<blockquote>
+<div><p>oxygen requirement for each strain</p>
+</div></blockquote>
 </dd></dl>
 
 <dl class="mat function">
@@ -574,6 +597,25 @@ nomenclature to translate (e.g., cpd00001)</p>
 </dd></dl>
 
 <dl class="mat function">
+<dt class="sig sig-object mat" id="src.reconstruction.demeter.src.integration.updateAGORATaxonomyFile">
+<span class="sig-name descname"><span class="pre">updateAGORATaxonomyFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">version</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/reconstruction/demeter/src/integration/updateAGORATaxonomyFile.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.reconstruction.demeter.src.integration.updateAGORATaxonomyFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieved up to date taxonomic information for AGORA strains from NCBI
+and saves an updated table with the most recent taxonomic assignments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>updateAGORATaxonomyFile</strong> (<em>version</em>)</p>
+</dd>
+</dl>
+<p>REQUIRED INPUT
+version          Version of AGORA for which the information table should</p>
+<blockquote>
+<div><p>be updated (allowed inputs: ‘AGORA’,’AGORA2’)</p>
+</div></blockquote>
+<p>OUTPUT
+infoFile       Updated table with up to date taxonomic information</p>
+</dd></dl>
+
+<dl class="mat function">
 <dt class="sig sig-object mat" id="src.reconstruction.demeter.src.integration.writeReactionsFromPubSeedSpreadsheets">
 <span class="sig-name descname"><span class="pre">writeReactionsFromPubSeedSpreadsheets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">infoFilePath</span></em>, <em class="sig-param"><span class="pre">inputDataFolder</span></em>, <em class="sig-param"><span class="pre">spreadsheetFolder</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/reconstruction/demeter/src/integration/writeReactionsFromPubSeedSpreadsheets.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.reconstruction.demeter.src.integration.writeReactionsFromPubSeedSpreadsheets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prepares input file for the comparative genomics part
@@ -609,10 +651,10 @@ cobratoolbox/papers/2021_demeter/exampleSpreadsheets.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../suite/index.html" class="btn btn-default float-right" title="Suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../debugging/index.html" class="btn btn-default float-right" title="Debugging" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../debugging/index.html" class="btn btn-default" title="Debugging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../refinement/index.html" class="btn btn-default" title="Refinement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

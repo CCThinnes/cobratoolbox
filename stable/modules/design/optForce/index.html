@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../../_static/json/manifest.json">
@@ -69,7 +65,7 @@
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../index.html"/>
         <link rel="up" title="Design" href="../index.html"/>
-        <link rel="next" title="Optforcegams" href="../optForceGAMS/index.html"/>
+        <link rel="next" title="Trimgdel" href="../TrimGdel/index.html"/>
         <link rel="prev" title="Optenvelope" href="../optEnvelope/index.html"/> 
 
   
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -160,9 +155,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../base/index.html">Base</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Design</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../optForceGAMS/index.html">Optforcegams</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../optEnvelope/index.html">Optenvelope</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Optforce</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../optForceGAMS/index.html">Optforcegams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../TrimGdel/index.html">Trimgdel</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../reconstruction/index.html">Reconstruction</a></li>
@@ -1632,7 +1628,7 @@ transporters or exchange reactions in the set</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../optForceGAMS/index.html" class="btn btn-default float-right" title="Optforcegams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../TrimGdel/index.html" class="btn btn-default float-right" title="Trimgdel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../optEnvelope/index.html" class="btn btn-default" title="Optenvelope" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../index.html"/>
         <link rel="up" title="Solvers" href="../index.html"/>
-        <link rel="next" title="Mosek" href="../mosek/index.html"/>
-        <link rel="prev" title="Old" href="../cardOpt/sparseLP/old/index.html"/> 
+        <link rel="next" title="Rescale" href="../rescale/index.html"/>
+        <link rel="prev" title="Nlp" href="../NLP/index.html"/> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../../../_static/../" + item.website_url + "' ><img src='../../../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../../../_static/../" + item.website_url + "' ><img src='../../../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -159,29 +154,29 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Base</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../paths/index.html">Paths</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../io/index.html">Io</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../cobrarrow/index.html">Cobrarrow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ci/index.html">Ci</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../install/index.html">Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../cobrarrow/index.html">Cobrarrow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../io/index.html">Io</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ci/index.html">Ci</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">Solvers</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../rescale/index.html">Rescale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../varKin/index.html">Varkin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../NLP/index.html">Nlp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../param/index.html">Param</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../getSetSolver/index.html">Getsetsolver</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../lp_solve/index.html">Lp_solve</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../cardOpt/index.html">Cardopt</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Entropicfba</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../mosek/index.html">Mosek</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../gurobi/index.html">Gurobi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../init/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../NLP/index.html">Nlp</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Entropicfba</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rescale/index.html">Rescale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lindo/index.html">Lindo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../cplex/index.html">Cplex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lp_solve/index.html">Lp_solve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../varKin/index.html">Varkin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../param/index.html">Param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mosek/index.html">Mosek</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cardOpt/index.html">Cardopt</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../gams/index.html">Gams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../init/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cplex/index.html">Cplex</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../codeConsistency/index.html">Codeconsistency</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../dataIntegration/index.html">Dataintegration</a></li>
@@ -350,15 +345,23 @@ x0l = -inf, x0u = inf, &lt;=&gt; z_x0 = 0
 then the above reduces to
 || log(vr/vf) = N’<a href="#id56"><span class="problematic" id="id57">*</span></a>(u0 + log(x) + z_x) ||_inf
 where z_x is the dual variable to the bounds on concentration x.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">USAGE<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>[solution, modelOut] = entropicFluxBalanceAnalysis</strong> (<em>model,param</em>)</p>
 </dd>
 <dt class="field-even">INPUT<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>model</strong> – (the following fields are required - others can be supplied)</p>
-<ul class="simple">
+<ul>
 <li><p>S  - <cite>m x (n + k)</cite> Stoichiometric matrix</p></li>
-<li><p>c  - <cite>(n + k) x 1</cite> Linear objective coefficients</p></li>
+<li><dl>
+<dt>c  - <cite>(n + k) x 1</cite> Linear objective coefficients, split into</dt><dd><blockquote>
+<div><p>internal and external as follows:</p>
+</div></blockquote>
+<p>ci:   n x 1  linear objective coefficients corresponding to internal net fluxes
+ce:   k x 1  linear objective coefficients corresponding to internal net fluxes</p>
+</dd>
+</dl>
+</li>
 <li><p>lb - <cite>(n + k) x 1</cite> Lower bounds on net flux</p></li>
 <li><p>ub - <cite>(n + k) x 1</cite> Upper bounds on net flux</p></li>
 </ul>
@@ -471,16 +474,19 @@ model.cl:      m x 1    non-negative lower bound on final molecular concentratio
 model.cu:      m x 1    non-negative lower bound on final molecular concentrations
 model.dcl:     m x 1    real valued lower bound on difference between final and initial molecular concentrations   (default -inf)
 model.dcu:     m x 1    real valued upper bound on difference between final and initial initial molecular concentrations  (default inf)
-model.gasConstant:    scalar gas constant (default 8.31446261815324 J K^-1 mol^-1)
-model.temperature:              scalar temperature (default 310.15 Kelvin)
-param.maxConc: (1e4) maximim micromolar concentration allowed
-param.maxConc: (1e-4) minimum micromolar concentration allowed
+model.gasConstant:    8.3144621e-3; % Gas constant in kJ/(K*mol)
+model.temperature:              scalar temperature (default 310.15 Kelvin)</p>
+</div></blockquote>
+<dl>
+<dt>param.concentrationBounds: {(‘none’)} whether to set bounds on concentration or not</dt><dd><p>param.maxConc: (1e4) maximim micromolar concentration allowed
+param.minConc: (1e-4) minimum micromolar concentration allowed
 param.externalNetFluxBounds:   (‘original’) =</p>
 <blockquote>
 <div><p>‘dxReplacement’ = when model.dcl or model.dcu is provided then they set the upper and lower bounds on metabolite exchange</p>
 </div></blockquote>
 <p>param.printLevel:</p>
-</div></blockquote>
+</dd>
+</dl>
 <p>OUTPUTS:
 f:       m x 1    strictly positive weight on concentration entropy maximisation (default 1)
 u0:      m x 1    standard transformed Gibbs energy of formation, divided by RT (default 0)
@@ -498,9 +504,9 @@ wu:     k x 1    upper bound on external net flux</p>
 b:     m x 1    RHS of S*v = b</p>
 </div></blockquote>
 </div></blockquote>
-<p>EXAMPLE:</p>
-<p>NOTE:</p>
-<p>Author(s): Ronan Fleming</p>
+<p>l_r:     m x 1    lower bound on regularisation term in S*v + r = b (default -inf)
+u_r:     m x 1    upper bound on regularisation term in S*v + r = b (default  inf)
+paramOut  return param structure to capture any param set internally</p>
 </dd></dl>
 
 <dl class="mat function">
@@ -558,10 +564,11 @@ vfu:      n x 1    non-negative upper bound on internal forward flux
 vrl:      n x 1    non-negative lower bound on internal reverse flux
 vru:      n x 1    non-negative upper bound on internal reverse flux
 ci:       n x 1    linear objective coefficients corresponding to internal net fluxes
-vel:      k x 1    linear objective coefficients corresponding to external net fluxes
+ce:       k x 1    linear objective coefficients corresponding to internal net fluxes
 cf:       n x 1    real valued linear objective coefficients on internal forward flux
 cr:       n x 1    real valued linear objective coefficients on internal reverse flux
-g         n x 1    strictly positive weight on internal flux entropy maximisation</p>
+g         n x 1    strictly positive weight on internal flux entropy maximisation
+paramOut  return param structure to capture any param set internally</p>
 <p>EXAMPLE:</p>
 <p>NOTE:</p>
 <p>Author(s): Ronan Fleming</p>
@@ -736,10 +743,10 @@ optTol:         Optimality tolerance</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mosek/index.html" class="btn btn-default float-right" title="Mosek" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../rescale/index.html" class="btn btn-default float-right" title="Rescale" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../cardOpt/sparseLP/old/index.html" class="btn btn-default" title="Old" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../NLP/index.html" class="btn btn-default" title="Nlp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

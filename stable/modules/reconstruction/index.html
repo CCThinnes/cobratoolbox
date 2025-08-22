@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../index.html"/>
         <link rel="up" title="Functions" href="../index.html"/>
-        <link rel="next" title="Modelgeneration" href="modelGeneration/index.html"/>
-        <link rel="prev" title="Optforcegams" href="../design/optForceGAMS/index.html"/> 
+        <link rel="next" title="Rbionet" href="rBioNet/index.html"/>
+        <link rel="prev" title="Trimgdel" href="../design/TrimGdel/index.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../_static/../" + item.website_url + "' ><img src='../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -161,14 +156,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../design/index.html">Design</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Reconstruction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rBioNet/index.html">Rbionet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="refinement/index.html">Refinement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="comparison/index.html">Comparison</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a></li>
-<li class="toctree-l3"><a class="reference internal" href="metaboRePort/index.html">Metaboreport</a></li>
 <li class="toctree-l3"><a class="reference internal" href="demeter/index.html">Demeter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metaboRePort/index.html">Metaboreport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="refinement/index.html">Refinement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comparison/index.html">Comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
@@ -222,7 +217,7 @@
 <style>
    h1 {font-size:0px;}
 </style><div class="tutorialSectionBox reconstruction">
-   <div class="sectionLogo"><img class="avatar" src="https://king.nuigalway.ie/cobratoolbox/img/icon_reconstruction_wb.png" alt="reconstruction"></div>
+   <div class="sectionLogo"><img class="avatar" src="/cobratoolbox/stable/_static/img/reconstruction.png" alt="reconstruction"></div>
    <div class="sectionTitle"><h3>Reconstruction</h3></div>
    <div class="row">
       <div class="col-xs-6">
@@ -230,38 +225,38 @@
 <h1>Reconstruction<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/massBalance/index.html">Massbalance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/fluxConsistency/index.html">Fluxconsistency</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelVerification/index.html">Modelverification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/stoichConsistency/index.html">Stoichconsistency</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelProperties/index.html">Modelproperties</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="rBioNet/index.html">Rbionet</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rBioNet/gui/index.html">Gui</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="refinement/index.html">Refinement</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="refinement/GPRLogic/index.html">Gprlogic</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
-<li class="toctree-l1"><a class="reference internal" href="comparison/index.html">Comparison</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="comparison/modelBorgifier/index.html">Modelborgifier</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fastGapFill/AuxillaryFiles/index.html">Auxillaryfiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demeter/index.html">Demeter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="demeter/suite/index.html">Suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demeter/src/index.html">Src</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="metaboRePort/index.html">Metaboreport</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="metaboRePort/other/index.html">Other</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="demeter/index.html">Demeter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="demeter/src/index.html">Src</a></li>
-<li class="toctree-l2"><a class="reference internal" href="demeter/suite/index.html">Suite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refinement/index.html">Refinement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="refinement/GPRLogic/index.html">Gprlogic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comparison/index.html">Comparison</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="comparison/modelBorgifier/index.html">Modelborgifier</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fastGapFill/AuxillaryFiles/index.html">Auxillaryfiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelProperties/index.html">Modelproperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/fluxConsistency/index.html">Fluxconsistency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelVerification/index.html">Modelverification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/massBalance/index.html">Massbalance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/stoichConsistency/index.html">Stoichconsistency</a></li>
 </ul>
 </li>
 </ul>
@@ -366,10 +361,10 @@ for co-factors if needed
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="modelGeneration/index.html" class="btn btn-default float-right" title="Modelgeneration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="rBioNet/index.html" class="btn btn-default float-right" title="Rbionet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../design/optForceGAMS/index.html" class="btn btn-default" title="Optforcegams" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../design/TrimGdel/index.html" class="btn btn-default" title="Trimgdel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

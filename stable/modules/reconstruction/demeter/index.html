@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../index.html"/>
         <link rel="up" title="Reconstruction" href="../index.html"/>
-        <link rel="next" title="Src" href="src/index.html"/>
-        <link rel="prev" title="Other" href="../metaboRePort/other/index.html"/> 
+        <link rel="next" title="Suite" href="suite/index.html"/>
+        <link rel="prev" title="Gui" href="../rBioNet/gui/index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -161,18 +156,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../design/index.html">Design</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Reconstruction</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../modelGeneration/index.html">Modelgeneration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../rBioNet/index.html">Rbionet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../refinement/index.html">Refinement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../growthExpMatch/index.html">Growthexpmatch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../comparison/index.html">Comparison</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../fastGapFill/index.html">Fastgapfill</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../metaboRePort/index.html">Metaboreport</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Demeter</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="src/index.html">Src</a></li>
 <li class="toctree-l4"><a class="reference internal" href="suite/index.html">Suite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src/index.html">Src</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../metaboRePort/index.html">Metaboreport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../refinement/index.html">Refinement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../comparison/index.html">Comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fastGapFill/index.html">Fastgapfill</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modelGeneration/index.html">Modelgeneration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../visualization/index.html">Visualization</a></li>
@@ -227,16 +222,16 @@
 <span id="id1"></span><h1>Demeter<a class="headerlink" href="#demeter" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="src/index.html">Src</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/properties/index.html">Properties</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/refinement/index.html">Refinement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/debugging/index.html">Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/integration/index.html">Integration</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="suite/index.html">Suite</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="suite/tests/index.html">Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="suite/reports/index.html">Reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="src/index.html">Src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/properties/index.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/refinement/index.html">Refinement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/integration/index.html">Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/debugging/index.html">Debugging</a></li>
 </ul>
 </li>
 </ul>
@@ -253,10 +248,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="src/index.html" class="btn btn-default float-right" title="Src" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="suite/index.html" class="btn btn-default float-right" title="Suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../metaboRePort/other/index.html" class="btn btn-default" title="Other" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../rBioNet/gui/index.html" class="btn btn-default" title="Gui" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

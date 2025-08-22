@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="../../../_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="../../../_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="../../../_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="../../../_static/json/manifest.json">
@@ -69,8 +65,8 @@
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../index.html"/>
         <link rel="up" title="Base" href="../index.html"/>
-        <link rel="next" title="Rescale" href="rescale/index.html"/>
-        <link rel="prev" title="Utilities" href="../utilities/index.html"/> 
+        <link rel="next" title="Getsetsolver" href="getSetSolver/index.html"/>
+        <link rel="prev" title="Ci" href="../ci/index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='../../../search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
+                return "<span><a href='../../../_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='../../../_static/../" + item.website_url + "' ><img src='../../../_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
@@ -159,29 +154,29 @@
 <li class="toctree-l2"><a class="reference internal" href="../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Base</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../paths/index.html">Paths</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../io/index.html">Io</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../cobrarrow/index.html">Cobrarrow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ci/index.html">Ci</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install/index.html">Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cobrarrow/index.html">Cobrarrow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../io/index.html">Io</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ci/index.html">Ci</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Solvers</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rescale/index.html">Rescale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="varKin/index.html">Varkin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="NLP/index.html">Nlp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="param/index.html">Param</a></li>
 <li class="toctree-l4"><a class="reference internal" href="getSetSolver/index.html">Getsetsolver</a></li>
-<li class="toctree-l4"><a class="reference internal" href="lp_solve/index.html">Lp_solve</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cardOpt/index.html">Cardopt</a></li>
-<li class="toctree-l4"><a class="reference internal" href="entropicFBA/index.html">Entropicfba</a></li>
-<li class="toctree-l4"><a class="reference internal" href="mosek/index.html">Mosek</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gurobi/index.html">Gurobi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="init/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NLP/index.html">Nlp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="entropicFBA/index.html">Entropicfba</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rescale/index.html">Rescale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lindo/index.html">Lindo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cplex/index.html">Cplex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lp_solve/index.html">Lp_solve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="varKin/index.html">Varkin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param/index.html">Param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mosek/index.html">Mosek</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cardOpt/index.html">Cardopt</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gams/index.html">Gams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="init/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cplex/index.html">Cplex</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../codeConsistency/index.html">Codeconsistency</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../dataIntegration/index.html">Dataintegration</a></li>
@@ -239,32 +234,32 @@
 <span id="id1"></span><h1>Solvers<a class="headerlink" href="#solvers" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="getSetSolver/index.html">Getsetsolver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gurobi/index.html">Gurobi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NLP/index.html">Nlp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="entropicFBA/index.html">Entropicfba</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rescale/index.html">Rescale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lindo/index.html">Lindo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lp_solve/index.html">Lp_solve</a></li>
 <li class="toctree-l1"><a class="reference internal" href="varKin/index.html">Varkin</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="varKin/BDCAmethods/index.html">Bdcamethods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="varKin/levMarMethods/index.html">Levmarmethods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="varKin/BDCAmethods/index.html">Bdcamethods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="varKin/derFreeMethods/index.html">Derfreemethods</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="NLP/index.html">Nlp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="param/index.html">Param</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getSetSolver/index.html">Getsetsolver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lp_solve/index.html">Lp_solve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mosek/index.html">Mosek</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cardOpt/index.html">Cardopt</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cardOpt/smoothConcave/index.html">Smoothconcave</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cardOpt/sparseLP/index.html">Sparselp</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="cardOpt/sparseLP/old/index.html">Old</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="cardOpt/smoothConcave/index.html">Smoothconcave</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="entropicFBA/index.html">Entropicfba</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mosek/index.html">Mosek</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gurobi/index.html">Gurobi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="init/index.html">Init</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lindo/index.html">Lindo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cplex/index.html">Cplex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gams/index.html">Gams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="init/index.html">Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cplex/index.html">Cplex</a></li>
 </ul>
 </div>
 <span class="target" id="module-src.base.solvers"></span><dl class="mat function">
@@ -825,10 +820,10 @@ returns 1 if at least one problem type is satisfied</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rescale/index.html" class="btn btn-default float-right" title="Rescale" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="getSetSolver/index.html" class="btn btn-default float-right" title="Getsetsolver" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../utilities/index.html" class="btn btn-default" title="Utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../ci/index.html" class="btn btn-default" title="Ci" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
