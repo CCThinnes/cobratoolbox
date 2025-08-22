@@ -15,16 +15,12 @@
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="_static/img/apple-touch-icon.png">
-  
   
     <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
   
   
     <link rel="icon" type="image/png" sizes="16x16" href="_static/img/favicon-16x16.png">
   
-  
-    <link rel="mask-icon" href="_static/img/safari-pinned-tab.svg" color="#5bbad5">
   
   
     <link rel="manifest" href="_static/json/manifest.json">
@@ -92,7 +88,7 @@
           
 
           
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+            <img src="/cobratoolbox/stable/_static/img/logo.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
 
@@ -126,14 +122,13 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='search.html?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='_static/../" + item.website_url + "' ><img src='_static/link.svg'/></a></span>";
+                return "<span><a href='_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='_static/../" + item.website_url + "' ><img src='_static/link.svg'/></a></span>";
 		    }
 	    },
-
+		
 		theme: "square"
 
 	};
